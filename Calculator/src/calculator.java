@@ -4,14 +4,16 @@ public class calculator
 	{
 		public static void main(String[] args)
 		{
-//			userInput();
-			
+		userInput();
+		add(x,y);
+		subtract(x,y);
+		multiply(x,y);
+		divide(x,y);
+		exponents(x,y);
 		}
 		
-		static double num1 = 0;
-		static double subtraction = 0;
-		static double multiplication = 0;
-		static double division = 0;
+		static double x = 0;
+		static double y = 0;
 		
 		public static void userInput()
 			{
@@ -28,55 +30,72 @@ public class calculator
 					{
 					Scanner userInput1 = new Scanner(System.in);	
 					System.out.println("What is the first number that you would like to add?");
-
-
+					x = userInput1.nextDouble();
+					Scanner userInput2 = new Scanner(System.in);	
+					System.out.println("What is the second number that you would like to add?");
+					y = userInput2.nextDouble();
+					add(x,y);
 					}
 				else if(input.equals("2"))
 					{
-						
+					Scanner userInput1 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to subtract from?");
+					x = userInput1.nextDouble();
+					Scanner userInput2 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to subtract?");
+					y = userInput2.nextDouble();
+					subtract(x,y);
 					}
 				else if(input.equals("3"))
 					{
-						
+					Scanner userInput1 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to multiply?");
+					x = userInput1.nextDouble();	
+					Scanner userInput2 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to multiply by?");
+					y = userInput2.nextDouble();	
+					multiply(x,y);	
 					}
 				else if(input.equals("4"))
 					{
-						
+					Scanner userInput1 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to divide?");
+					x = userInput1.nextDouble();
+					Scanner userInput2 = new Scanner(System.in);	
+					System.out.println("What is the number that you would like to divide by?");
+					y = userInput2.nextDouble();
+					divide(x,y);
 					}
 				else if(input.equals("5"))
 					{
-						
+					Scanner userInput1 = new Scanner(System.in);	
+					System.out.println("Which number would you like to start with?");
+					x = userInput1.nextDouble();
+					Scanner userInput2 = new Scanner(System.in);	
+					System.out.println("To what power?");
+					y = userInput2.nextDouble();
+					Math.pow(x, y);
 					}
 			}
 				
 		
 	    public static double add(double x, double y)
 		{
-			num1 = userInput1.nextDouble();
-			System.out.println(add(x,y));
+			System.out.print(add(x,y));
 			return x + y;	
 		}
 		public static double subtract(double x, double y)
 		{
-			Scanner userInput2 = new Scanner(System.in);
-			System.out.println("What is the first number that you would like to add?");
-			subtraction = userInput2.nextDouble();
 			System.out.println(subtract(x,y));
 			return x - y;
 		}
 		public static double multiply(double x, double y)
 		{
-			Scanner userInput3 = new Scanner (System.in);
-			System.out.println("What is the first number that you would like to add?");
-			multiplication = userInput3.nextDouble();
-			System.out.println(multiply(x,y));
+			System.out.println(multiply (x,y));
 			return x * y;
 		}
 		public static double divide(double x, double y)
 		{
-			Scanner userInput4 = new Scanner(System.in);
-			System.out.println("What is the first number that you would like to add?");
-			division = userInput4.nextDouble();
 			System.out.println(divide(x,y));
 			return x / y;
 		}
@@ -86,4 +105,3 @@ public class calculator
 			return x + y;
 		}
 	}
-// hi
