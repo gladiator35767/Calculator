@@ -72,7 +72,7 @@ public class calculator
 					System.out.println("Which number would you like to start with?");
 					x = userInput1.nextDouble();
 					Scanner userInput2 = new Scanner(System.in);	
-					System.out.println("To what power?");
+					System.out.println("To the (_?_) power");
 					y = userInput2.nextDouble();
 					Math.pow(x, y);
 					}
@@ -81,27 +81,27 @@ public class calculator
 		
 	    public static double add(double x, double y)
 		{
-			System.out.print(add(x,y));
+			System.out.println(x + y);
 			return x + y;	
 		}
 		public static double subtract(double x, double y)
 		{
-			System.out.println(subtract(x,y));
+			System.out.println(x - y);
 			return x - y;
 		}
 		public static double multiply(double x, double y)
 		{
-			System.out.println(multiply (x,y));
+			System.out.println(x * y);
 			return x * y;
 		}
 		public static double divide(double x, double y)
 		{
-			System.out.println(divide(x,y));
+			System.out.println(x / y);
 			return x / y;
 		}
 		public static double exponents(double x, double y)
 		{
-			Math.pow(x, y);
+			System.out.println(Math.pow(x, y));
 			return x + y;
 		}
 	}
