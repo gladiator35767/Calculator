@@ -2,20 +2,11 @@ import java.util.Scanner;
 
 public class calculator
 	{
-		public static void main(String[] args)
-		{
-		userInput();
-		add(x,y);
-		subtract(x,y);
-		multiply(x,y);
-		divide(x,y);
-		exponents(x,y);
-		}
-		
 		static double x = 0;
 		static double y = 0;
 		
-		public static void userInput()
+		public static void main(String[] args)
+		{		
 			{
 				Scanner userInput =new Scanner(System.in);
 				System.out.println("Which type of math would you like to do today?");
@@ -77,7 +68,7 @@ public class calculator
 					Math.pow(x, y);
 					}
 			}
-				
+		}		
 		
 	    public static double add(double x, double y)
 		{
